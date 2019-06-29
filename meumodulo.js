@@ -1,7 +1,6 @@
 const request = require('request');
 const cheerio = require('cheerio');
-
-const urlProduct = 'https://www.americanas.com.br/produto/133718358/'
+module.exports = function getproduct (urlProduct)  {
 
 request (urlProduct, (error, response, html) => { 
     if (!error && response.statusCode == 200) {
@@ -24,16 +23,16 @@ request (urlProduct, (error, response, html) => {
 
         img: $('img').attr('src'),
 
-        seller: $('.seller-00776574000660').text().repeat(),
+        seller: $('.seller-00776574000660').text(),
 
         price:  parseFloat ($('.main-offer__SalesPrice-sc-1oo1w8r-1').text().substring(2)),
 
         }
 
         console.log(jsonProduct)
-        
+
     }
-} ) 
+} ) }
 
-
+return module.exports;
 
