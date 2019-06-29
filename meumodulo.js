@@ -24,7 +24,7 @@ request (urlProduct, (error, response, html) => {
 
         img: $('img').attr('src'),
 
-        seller: $('.seller-00776574000660').text().repeat(1),
+        seller: $('.seller-00776574000660').text().repeat(),
 
         price:  parseFloat ($('.main-offer__SalesPrice-sc-1oo1w8r-1').text().substring(2)),
 
