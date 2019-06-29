@@ -1,12 +1,13 @@
 ## Isis-MeuModulo
 
-####A função deste módulo é permitir que se tenha acesso a informações de um produto da americanas.com através de uma requisição que retorn um JSON.
 
-####Para isso é necessário importar o módulo:
+#### A função deste módulo é permitir que se tenha acesso a informações de um produto da americanas.com através de uma requisição que retorn um JSON.
 
-`const getproduct = require('./meumodulo.js')
+#### Para isso é necessário importar o módulo:
 
-getproduct(' inserir a URL do produto ')`
+` const getproduct = require('./meumodulo.js')
 
-####E rodar seu programa.
+getproduct(' inserir a URL do produto ') `
+
+#### E rodar seu programa.
 
