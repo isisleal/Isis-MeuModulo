@@ -5,9 +5,9 @@
 
 #### Para isso é necessário importar o módulo:
 
-```const getproduct = require('./meumodulo.js')
+```const getproduct = require('./meumodulo.js')```
 
-getproduct(' inserir a URL do produto ')```
+```getproduct(' inserir a URL do produto ')```
 
 #### E rodar seu programa.
 
